@@ -1,0 +1,306 @@
+{% extends 'clone/base.html' %}
+{% load static %}
+{% block content %}
+<!--=============================-->
+<!--=         Portfolio         =-->
+<!--=============================-->
+<section class="portfolios-three">
+    <div class="container">
+        <div class="portfolio-inner">
+            <ul class="pixsass-isotope-filter">
+                <li class="current">
+                    <a href="#" data-filter="*">All Works</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".dinner ">Marketing</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".cocktails ">Branding </a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".pizza">Design</a>
+                </li>
+                <li>
+                    <a href="#" data-filter=".dolci">Development</a>
+                </li>
+
+                <li>
+                    <a href="#" data-filter=".wine">Ecommerce</a>
+                </li>
+            </ul>
+            <div class="pixsass-isotope wow fadeIn" data-wow-delay="0.3s">
+                <div class="pixsass-portfolio-items portfolio-three column-3 port-gutters">
+                    <div class="grid-sizer"></div>
+
+                    <div class="pixsass-portfolio-item width-large grid-item pizza dolci cocktails ">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/9.jpg' %}" alt="portfolio thumb">
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Creative Tropical</a></h3>
+                            <span>Winter is coming</span>
+                        </div>
+
+                    </div>
+
+                    <div class="pixsass-portfolio-item width-sm-large grid-item pizza dinner">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/28.jpg' %}" alt="portfolio thumb" />
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Lonely Steve</a></h3>
+                            <span>Branding</span>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="pixsass-portfolio-item width2 grid-item dolci wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/11.jpg' %}" alt="portfolio thumb" />
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Super Water</a></h3>
+                            <span>UX Design</span>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="pixsass-portfolio-item width3 grid-item pizza">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/12.jpg' %}" alt="portfolio thumb">
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Falling Show</a></h3>
+                            <span>Winter is coming</span>
+                        </div>
+                    </div> -->
+
+                    <div class="pixsass-portfolio-item width4 grid-item pizza wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/13.jpg' %}" alt="portfolio thumb">
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Flying Snack</a></h3>
+                            <span>Marketing</span>
+                        </div>
+                    </div>
+
+                    <div class="pixsass-portfolio-item width-large2 dolci grid-item">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/14.jpg' %}" alt="portfolio thumb">
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Creative iPhone X</a></h3>
+                            <span>Ecommerce</span>
+                        </div>
+
+                    </div>
+
+                    <div class="pixsass-portfolio-item grid-item dinner cocktails">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/15.jpg' %}" alt="portfolio thumb">
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Creative Tropical</a></h3>
+                            <span>UI/UX Branding</span>
+                        </div>
+                    </div>
+
+
+                    <div class="pixsass-portfolio-item width-sm grid-item cocktails dinner wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/16.jpg' %}" alt="portfolio thumb">
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Hand & Brush</a></h3>
+                            <span>Web Design</span>
+                        </div>
+                    </div>
+
+                    <div class="pixsass-portfolio-item width-sm grid-item cocktails dinner wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/17.jpg' %}" alt="portfolio thumb">
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3 class="portfolio-title"><a href="#">Birthday Cone</a></h3>
+                            <span>Winter is coming</span>
+                        </div>
+                    </div>
+
+                    <div class="pixsass-portfolio-item width-large grid-item pizza dolci cocktails ">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/18.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Winter is coming</span>
+                                <h3 class="portfolio-title"><a href="#">Creative Tropical</a></h3>
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="pixsass-portfolio-item width-sm-large grid-item pizza dinner">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/19.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Branding</span>
+                                <h3 class="portfolio-title"><a href="#">Lonely Steve</a></h3>
+
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+                    <!-- <div class="pixsass-portfolio-item width2 grid-item dolci wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/20.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>UX Design</span>
+                                <h3 class="portfolio-title"><a href="#">Super Water</a></h3>
+
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="pixsass-portfolio-item width3 grid-item pizza">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/22.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Winter is coming</span>
+                                <h3 class="portfolio-title"><a href="#">Falling Show</a></h3>
+
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="pixsass-portfolio-item width4 grid-item pizza wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/23.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Marketing</span>
+                                <h3 class="portfolio-title"><a href="#">Flying Snack</a></h3>
+
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="pixsass-portfolio-item width-large2 dolci grid-item">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/21.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Ecommerce</span>
+                                <h3 class="portfolio-title"><a href="#">Creative iPhone X</a></h3>
+
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="pixsass-portfolio-item grid-item dinner cocktails">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/25.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>UI/UX Branding</span>
+                                <h3 class="portfolio-title"><a href="#">Creative Tropical</a></h3>
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                    <div class="pixsass-portfolio-item width-sm grid-item cocktails dinner wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/24.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Web Design</span>
+                                <h3 class="portfolio-title"><a href="#">Hand & Brush</a></h3>
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="pixsass-portfolio-item width-sm grid-item cocktails dinner wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/26.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Winter is coming</span>
+                                <h3 class="portfolio-title"><a href="#">Birthday Cone</a></h3>
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="pixsass-portfolio-item width-sm grid-item cocktails dinner wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/28.html' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Winter is coming</span>
+                                <h3 class="portfolio-title"><a href="#">Birthday Cone</a></h3>
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div> -->
+
+                    <!-- </div> -->
+
+                    <div class="pixsass-portfolio-item width-sm grid-item cocktails dinner wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/27.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Winter is coming</span>
+                                <h3 class="portfolio-title"><a href="#">Birthday Cone</a></h3>
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="pixsass-portfolio-item width-sm grid-item cocktails dinner wine">
+                        <div class="pixsass-isotope-grid__img">
+                            <img src="{% static 'clone/media/portfolio/29.jpg' %}" alt="portfolio thumb" />
+
+                            <div class="portfolio-info">
+                                <span>Winter is coming</span>
+                                <h3 class="portfolio-title"><a href="#">Birthday Cone</a></h3>
+                                <p class="meta">April 10, 2019</p>
+                            </div>
+                        </div>
+
+                    </div> -->
+
+
+                </div>
+            </div>
+        </div><!-- /.portfolio-inner -->
+        <div class="button-container mt-40 text-center">
+            <a href="#" class="pix-btn btn-outline plus-icon">Load More <i class="ei ei-plus"></i></a>
+        </div>
+    </div>
+    <!-- /.container -->
+</section>
+{% endblock content %}

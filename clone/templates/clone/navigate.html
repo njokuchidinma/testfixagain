@@ -1,0 +1,81 @@
+{% load static %}
+<div id="main_content">
+
+
+    <!--=========================-->
+    <!--=        Navbar         =-->
+    <!--=========================-->
+    <header class="site-header header_trans-fixed" data-top="992">
+        <div class="container">
+            <div class="header-inner">
+                <div class="toggle-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <!-- /.toggle-menu -->
+
+                <div class="site-mobile-logo">
+                    <a href="{% url 'index' %}" class="logo">
+                        <img src="{% static 'clone/img/main-logo.html' %}" alt="site logo" class="main-logo">
+                        <img src="{% static 'clone/img/sticky-logo.png' %}" alt="site logo" class="sticky-logo">
+                    </a>
+                </div>
+
+                <nav class="site-nav">
+                    <div class="close-menu">
+                        <span>Close</span>
+                        <i class="ei ei-icon_close"></i>
+                    </div>
+
+                    <div class="site-logo">
+                        <a href="{% url 'index' %}" class="logo">
+                            <img src="{% static 'clone/img/main-logo.html' %}" alt="site logo" class="main-logo">
+                            <img src="{% static 'clone/img/sticky-logo.png' %}" alt="site logo" class="sticky-logo">
+                        </a>
+                    </div>
+                    <!-- /.site-logo -->
+
+                    <div class="menu-wrapper" data-top="992">
+                        <ul class="site-main-menu">
+                            <li>
+                                <a href="{% url 'index' %}">Home</a>
+                            </li>
+                            <li><a href="{% url 'about' %}">About</a></li>
+                            <li class="menu-item-has-children">
+                                <a href="{% url 'blog' %}">Blog</a>
+                                <ul class="sub-menu">
+                                    <li><a href="{% url 'blog' %}">Blog Standard</a></li>
+                                    <li><a href="{% url 'blog-grid' %}">Blog Grid</a></li>
+                                    <li><a href="{% url 'blog-single' %}">Blog Single</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item-has-children">
+                                <a href="#">Pages</a>
+
+                                <ul class="sub-menu">
+                                    <li><a href="{% url 'service' %}">Service</a></li>
+                                    <li><a href="{% url 'team' %}">Our Team</a></li>
+                                    <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+                                    <li><a href="{% url 'pricing' %}">Pricing</a></li>
+                                    <li><a href="{% url 'faq' %}">Faq's</a></li>
+                                    <li><a href="{% url 'signin' %}">Sign In</a></li>
+                                    <li><a href="{% url 'signup' %}">Sign Up</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="{% url 'contact' %}">Contact</a></li>
+                        </ul>
+
+                        <div class="nav-right">
+                            <a href="{% url 'signup' %}" class="nav-btn">Free Sign Up</a>
+                        </div>
+                    </div>
+                    <!-- /.menu-wrapper -->
+
+                </nav><!-- /.site-nav -->
+            </div><!-- /.header-inner -->
+        </div><!-- /.container -->
+    </header><!-- /.site-header -->
+    
+</div><!-- /#site -->
